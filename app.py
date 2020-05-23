@@ -4,10 +4,8 @@ import numpy as np
 import pickle
 # import keras
 app = Flask(__name__)
-import os
-os.chdir(r'C:\Users\Hp\Desktop\Projects\deep learning\churn modeling\webApp')
 
-scaler = pickle.load(open('scaler.pkl','rb'))
+#scaler = pickle.load(open('scaler.pkl','rb'))
 # model = pickle.load(open('model.pkl','rb'))
 
 def preprocess(Data):
