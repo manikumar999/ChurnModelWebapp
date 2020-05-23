@@ -1,0 +1,31 @@
+
+{% extends "base.html" %}
+{% block content %}
+   <div class="formst">
+       <form action="{{ url_for('predict')}}" method="post">
+		<label  for="Surname">Surname:</label>
+		<input  type="text" name="Surname" value="{{request.form['Surname'] }}" />
+		<label  for="CreditScore">CreditScore:</label>
+		<input type="text" name="CreditScore" value="{{request.form['CreditScore'] }}" />
+		<label  for="Geography">Geography:</label>
+		<input  type="text" name="Geography" value="{{request.form['Geography'] }}" />		
+		<label  for="Gender">Gender:</label>
+		<input type="text" name="Gender" value="{{request.form['Gender'] }}" />
+		<label  for="Age">Age:</label>
+		<input  type="text" name="Age" value="{{request.form['Age'] }}" />
+		<label  for="Tenure">Tenure:</label>
+		<input type="text" name="Tenure" value="{{request.form['Tenure'] }}" />
+		<label  for="Balance">Balance:</label>
+		<input  type="text" name="Balance" value="{{request.form['Balance'] }}" />
+		<label  for="NumOfProducts">NumOfProducts:</label>
+		<input type="text" name="NumOfProducts" value="{{request.form['NumOfProducts'] }}" />
+		<label  for="HasCrCard">HasCrCard:</label>
+		<input  type="text" name="HasCrCard" value="{{request.form['HasCrCard'] }}" />
+		<label  for="IsActiveMember">IsActiveMember:</label>
+		<input type="text" name="IsActiveMember" value="{{request.form['IsActiveMember'] }}" />
+		<label  for="EstimatedSalary">EstimatedSalary:</label>
+		<input type="text" name="EstimatedSalary" value="{{request.form['EstimatedSalary'] }}" />
+		<button type="submit" name="submit" id="subBtn">Submit</button>
+	</form>
+   </div>
+{% endblock %}
